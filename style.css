@@ -1,0 +1,98 @@
+/* Definições base do corpo da página */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif; /* [cite: 178] */
+    background-color: #e0f2f1; /* Azul água muito claro */
+    color: #01579b; /* Azul escuro para o texto */
+    line-height: 1.5; /* [cite: 180] */
+}
+
+/* Estilo do Topo */
+.topo {
+    background: #0277bd; /* Azul oceano profundo */
+    color: white;
+    padding: 40px 20px;
+    text-align: center; /* [cite: 190] */
+    border-bottom: 5px solid #01579b;
+}
+
+/* Menu de Navegação */
+.menu a {
+    color: #e1f5fe;
+    text-decoration: none; /* [cite: 195] */
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline; /* [cite: 201] */
+    color: white;
+}
+
+/* Layout Centralizado */
+.container {
+    width: 90%; /* [cite: 127] */
+    max-width: 950px; /* [cite: 128] */
+    margin: 30px auto; /* [cite: 129] */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilo do Bloco Principal (Canvas) */
+.canvas {
+    background: white; /* [cite: 170] */
+    border: 1px solid #b3e5fc; /* [cite: 171] */
+    border-radius: 16px; /* [cite: 172] */
+    padding: 25px; /* [cite: 173] */
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Estilo dos Cards de Peixes */
+.card {
+    border: 1px solid #e1f5fe; /* [cite: 147] */
+    border-radius: 12px; /* [cite: 149] */
+    padding: 16px; /* [cite: 141] */
+    margin: 15px 0; /* [cite: 142] */
+    background: #f1f8e9;
+    transition: 0.3s ease;
+}
+
+/* Efeito de flutuação ao passar o rato */
+.card:hover {
+    transform: translateY(-5px); /* [cite: 217, 222] */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Botões Estilizados */
+.btn {
+    background: #0288d1;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* [cite: 206] */
+    border-radius: 8px; /* [cite: 207] */
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9; /* [cite: 212] */
+    background: #01579b;
+}
+
+/* Marcação de Destaque */
+.destaque {
+    color: #ffb300; /* Cor de peixe dourado */
+    font-weight: bold;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 30px;
+    color: #546e7a;
+}
